@@ -1,0 +1,19 @@
+.card {
+    width: 30%;
+    height: 200px;
+    border: 1px solid gray;
+    text-align: center;
+    padding: 5px;
+}
+
+.temperatura {
+    display: flex;
+    justify-content: space-around;
+}
+
+.boton {
+    display: flex;
+    justify-content: flex-end;
+    background-color: red;
+    color: white;
+}

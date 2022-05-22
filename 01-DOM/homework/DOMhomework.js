@@ -84,9 +84,8 @@ function buildToDo(todo, index) {
 // Devolver el nuevo array
 
 function buildToDos(toDos) {
-  // Tu código acá:
-  let array = toDos.map((elem, index) => buildToDo(elem, index));
-  return array;
+  // Tu código acá: 
+  return toDos.map(buildToDo);
 }
 
 

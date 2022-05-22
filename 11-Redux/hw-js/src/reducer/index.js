@@ -1,5 +1,6 @@
 const { INCREMENTO, DECREMENTO } = require('../action-types');
-
+//import { INCREMENTO, DECREMENTO} from '../action-types';
+//const { incremento, decremento } = require('../actions/index');
 const initialState = {
   contador: 0
 }
@@ -9,7 +10,17 @@ const initialState = {
 // ¿Qué tiene que hacer el reducer con el contador de cada caso?
 
 function contador(state = initialState, action) {
-  
+  if(action.type === INCREMENTO){
+    return {
+      contador: state.contador + 1
+    }
+  }
+  if(action.type === DECREMENTO){
+    return{
+      contador: state.contador - 1
+    }
+  }
+  return state;
 }
 
 module.exports = contador;

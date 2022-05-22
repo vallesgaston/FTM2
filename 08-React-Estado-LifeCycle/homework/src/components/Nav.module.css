@@ -1,0 +1,10 @@
+#logoHenry {
+  margin-right: 20px;
+}
+
+.header {
+  background-color: grey;
+  padding: 5px;
+  display: flex;
+  justify-content: space-around;
+}
